@@ -31,23 +31,3 @@ def carregar_conflitos(caminho_do_arquivo_csv):
     
 
 
-#main temporario
-if __name__ == "__main__":
-    
-   
-    NOME_ARQUIVO_CSV = 'grande.csv' 
-    
-    print(f"--- Iniciando teste da Parte 1 (Leitura Dataset) ---")
-    
-    arestas_do_grafo = carregar_conflitos(NOME_ARQUIVO_CSV)
-    
-    if arestas_do_grafo:
-        print(f"\n--- Teste BEM-SUCEDIDO para '{NOME_ARQUIVO_CSV}' ---")
-        print(f"Total de {len(arestas_do_grafo)} conflitos (arestas) encontrados.")
-        print("\nAs 5 primeiras arestas carregadas:")
-        print(arestas_do_grafo[:5])
-        print("\nAs 5 ultimas arestas carregadas:")
-        print(arestas_do_grafo[-5:])
-    else:
-        print(f"\n--- Teste FALHOU para '{NOME_ARQUIVO_CSV}' ---")
-        print("A lista de arestas esta vazia")
