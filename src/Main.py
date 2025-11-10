@@ -34,7 +34,7 @@ def main():
     import matplotlib.pyplot as plt
 
     #leitura
-    caminho_csv = sys.argv[1] if len(sys.argv) >= 2 else 'grande.csv' or 'medio.csv' or 'pequeno.csv'
+    caminho_csv = sys.argv[1] if len(sys.argv) >= 2 else 'Dataset/grande.csv' or 'Dataset/medio.csv' or 'Dataset/pequeno.csv'
     arestas = carregar_conflitos(caminho_csv)
 
     # Se não conseguir ler o CSV, usa grafo de teste
